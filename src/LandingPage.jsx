@@ -92,182 +92,193 @@ className="w-full h-full object-cover"        />
   );
 };
 
-const weekDays = ['Inicio', 'Lunes 10', 'Martes 11', 'Miércoles 12', 'Jueves 13', 'Viernes 14', 'Viernes 21'];
+const weekDays = ['Inicio', 'Lunes 09', 'Martes 10', 'Miércoles 11', 'Jueves 12', 'Viernes 13','Sabado 14','Martes 17','Miercoles 18','Jueves 19'];
 
 const sections = {
   Inicio: [],
-  'Lunes 10': [
+  'Lunes 09': [
     {
       id: 1,
       title: "9:30 AM - Acto Oficial de la Semana de la Facultad de Ingeniería",
-      description: "Ceremonia oficial con izamiento de pabellones por la Banda del Ejército, entonación de himnos y entrega de ofrenda floral. Participaron el Vicerrector Académico Dr. Héctor Hugo Sánchez Carlessi, Vicerrectora de Investigación Dra. Sandra Negro y Decano de Ingeniería Dr. Ing. Santiago Fidel Rojas Tuya. Fotografía oficial en la Explanada URP.",
+      description: "Ceremonia oficial con izamiento de pabellones por la Banda del Ejército, entonación de himnos y entrega de ofrenda floral. Participaron el Vicerrector Académico Dr. Héctor Hugo Sánchez Carlessi, Vicerrectora de Investigación Dra. Sandra Negro y Decano de Ingeniería Dr. Ing. Santiago Fidel Rojas Tuya.",
       imageUrl: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&h=600&fit=crop",
       carouselImages: ["/BANDA.jpg", "/HIMNO.jpg", "/FLORES.jpg", "/FOTOGRUPAL.jpg"],
-      videoLink: "https://www.facebook.com/share/v/1A7WmP2e3q/",
+      videoLink: "https://web.facebook.com/share/r/14yxUna1WYc/",
       youtubeLink: "https://www.youtube.com/watch?v=k6l8k4Q4tlI&list=PL8jHySzs9Ce-UEq2c_wwpv6KZRiMIaVYh"
     },
     {
       id: 2,
       title: "10:00 AM - Acto Académico de Inauguración",
-      description: "Palabras de bienvenida de la Dra. Ing. Esther Joni Vargas Chang y discurso inaugural del Decano de Ingeniería Dr. Ing. Santiago Fidel Rojas Tuya. Saludo del Embajador de Indonesia Sr. Ricky Suhendar y ponencia del Sr. Wahyu Agung Nugroho sobre cooperación Perú-Indonesia (CEPA). Premiación al Mérito Académico para estudiantes destacados 2024-II y 2025-I. Palabras del Rector, presentación del Grupo 'Canta Palma URP' y brindis de honor. Lugar: Auditorio Ollantaytambo.",
+      description: "Palabras de bienvenida de la Dra. Ing. Esther Joni Vargas Chang y discurso inaugural del Decano de Ingeniería, Dr. Ing. Santiago Fidel Rojas Tuya. Participación del Embajador de Malasia, quien brindó una conferencia sobre las relaciones bilaterales entre Malasia y el Perú, destacando los vínculos y oportunidades de cooperación entre ambos países. Ceremonia de reconocimiento y premiación a los estudiantes destacados de las Escuelas Profesionales de Ingeniería que ocuparon los primeros puestos en rendimiento académico durante los semestres 2025-II y 2026-I. Palabras del Rector y brindis de honor. Lugar: Auditorio Ollantaytambo.",
       imageUrl: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop",
       carouselImages: ["/AUDITORIO7.jpg", "/AUDITORIO8.jpg", "/AUDITORIO9.jpg", "/PREMIO4.jpg", "/PREMIO5.jpg"]
     },
     {
       id: 3,
-      title: "6:30 PM - Evolución y normativas de las redes de cableado de cobre hacia la fibra óptica",
-      description: "Ing. Álvaro Cayo Urrutia (Alcared SAC) expuso sobre tendencias en infraestructura de telecomunicaciones, migración de cobre a fibra óptica y normativas internacionales. Ventajas técnicas, económicas y de rendimiento de la fibra óptica. Lugar: Auditorio Ollantaytambo. Organiza: Escuela Profesional de Ingeniería Electrónica.",
-      imageUrl: "/CONFERENCIA1LUNESS.jpg"
+      title: "6:00 PM - Open Source e IOT: La Libertad Tecnológica que Impulsa la Industria",
+      description: "El Mg. Ing. José Lau Morales expuso sobre el software de código abierto (Open Source) y el Internet de las Cosas (IoT), destacando su importancia para impulsar la innovación, la libertad tecnológica y la transformación de los procesos industriales. Lugar: Auditorio Ollantaytambo. Organiza: Escuela Profesional de Ingeniería Electrónica.",
+      imageUrl: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop",
+      carouselImages: ["/CONFERENCIALUNES092.jpg"]
     },
     {
       id: 4,
-      title: "7:30 PM - Proyectos de ingeniería y oportunidades de desarrollo en la Agencia Espacial del Perú",
-      description: "Mg. Ing. Christian Pereyra Alpas presentó proyectos estratégicos de CONIDA, oportunidades profesionales en el sector aeroespacial peruano, programas de satélites, colaboraciones internacionales y desafíos tecnológicos. Motivación sobre el futuro del sector espacial nacional. Lugar: Auditorio Ollantaytambo. Organiza: Escuela Profesional de Ingeniería Electrónica.",
-      imageUrl: "/CONFERENCIA2LUNES.jpg"
+      title: "6:00 PM - Optimización de Módulo en Joomla y Estrategias Web Asistidas por IA",
+      description: "La Mg. Ing. Karin Loredo expuso sobre la optimización de módulos en Joomla y la aplicación de estrategias web asistidas por Inteligencia Artificial, destacando herramientas y técnicas para mejorar la gestión, funcionalidad y rendimiento de los entornos digitales. Lugar: Vía Zoom. Organiza: Biblioteca Virtual de Ingeniería.",
+      imageUrl: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop",
+      carouselImages: ["/CONFERENCIALUNES09.jpg"]
     },
     {
       id: 5,
-      title: "8:30 PM - Investigación en Pequeños Satélites",
-      description: "Ing. Roxana Morán Morales expuso sobre CubeSats y nanosatélites, tecnología que revoluciona el acceso al espacio. Casos de éxito en investigación científica, monitoreo ambiental y telecomunicaciones. Aspectos técnicos de diseño, lanzamiento y aplicaciones para Perú. Lugar: Auditorio Ollantaytambo. Organiza: Escuela Profesional de Ingeniería Electrónica.",
-      imageUrl: "/CONFERENCIA3LUNESS.jpg"
+      title: "7:30 PM - El Rol de la Universidad en la Sociedad Digital",
+      description: "El Dr. Ing. Santiago Fidel Rojas Tuya expuso sobre el rol de la universidad en la sociedad digital, destacando su importancia en la formación de profesionales, la transformación educativa y la promoción de la innovación tecnológica frente a los desafíos de la era digital. Lugar: Auditorio Ollantaytambo. Organiza: Facultad de Ingeniería.",
+      imageUrl: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop",
+      carouselImages: ["/CONFELUNES093.jpg"]
+  
     }
   ],
-  'Martes 11': [
+  'Martes 10': [
+    {
+      id: 6,
+      title: "6:00 PM - Gemini Notebook Aplicado a la Investigación",
+      description: "El Mg. Ing. Luis Piedra Rubio expuso sobre la aplicación de Gemini Notebook en la investigación, destacando sus herramientas y funcionalidades para organizar información, analizar fuentes y facilitar el desarrollo de trabajos académicos. Lugar: Vía Zoom. Organiza: Biblioteca Virtual de Ingeniería.",
+      imageUrl: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop",
+      carouselImages: ["/CONFEMARTES01.jpg"]
+    }
+  ],
+  'Miércoles 11': [
+    {
+      id: 7,
+      title: "10:00 AM - IG Library.  Del Acceso al Conocimiento a la Competitividad Global: Preparando a nuestros estudiantes para competir con los Tigres Asiáticos.",
+      description: "El Mg. Ing. Humberto Ravest Becerra presentó IG Library y su aporte al acceso al conocimiento y la preparación de estudiantes para competir en un entorno global. Lugar: Vía Zoom. Organiza: Biblioteca Virtual de Ingeniería.",
+      imageUrl: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop",
+      carouselImages: ["/CONFEMIERCOLES02.jpg"]
+    }
+  ],
+  'Jueves 12': [
     {
       id: 8,
-      title: "11:30 AM - II Feria ConstruCivil 2025",
-      description: "Dra. Enriqueta Pereyra, Directora de la Escuela Profesional de Ingeniería Civil, inauguró la II FERIA CONSTRUCIVIL, contó con la participación de los docentes de la Escuela y diferentes empresas invitadas del área de la construcción, evento realizado en el Aulario de Inca Roca.",
-      imageUrl: "/feria12.jpg"
-    },
+      title: "6:00 PM - IA como Herramienta de Soporte en la Formulación, Redacción y Publicación Científica Indizada",
+      description: "El Dr. Ing. Pedro Huamaní Navarrete expuso sobre el uso de la Inteligencia Artificial como herramienta de apoyo en la formulación, redacción y publicación de artículos científicos. Lugar: Vía Zoom. Organiza: Biblioteca Virtual de Ingeniería.",
+     imageUrl: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop",
+      carouselImages: ["/CONFEJUEVES03.jpg"]
+    }
+  ],
+  'Viernes 13': [
     {
       id: 9,
-      title: "3:00 PM - Conociendo Education Link SAC (vía Zoom)",
-      description: "Mg. Víctor Velasco e Ing. Humberto Ravest presentaron herramientas de Education Link SAC: editoriales internacionales, gestión académica y detección de plagio. Facilitan la investigación y promueven integridad científica. Organiza: Biblioteca Virtual de Ingeniería.",
-      imageUrl: "/CONFERENCIA1MARTES.jpg"
+      title: "11:00 AM -  Ingeniería Descarbonizada y Algoritmos Verdes: Innovación Material e IA Sostenible para la Infraestructura del Futuro",
+      description: "La comunidad de Ingeniería se reunió en la Gran Cena de Confraternidad, una noche especial de celebración y camaradería. El evento contó con un buffet internacional, orquesta en vivo y show artístico. Los docentes, estudiantes y autoridades compartieron en el restaurante Mandarin (Av. Javier Prado Este 1860), cerrando con broche de oro la Semana de la Facultad de Ingeniería 2025.",
+      imageUrl: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop",
+      carouselImages: ["/CONFEVIERNES04.jpg"]
+
     },
     {
       id: 10,
-      title: "4:00 PM - Ingeniería Civil como Eje de la Remediación Ambiental",
-      description: "Ing. Edwin Moisés Pósito Huapaya expuso sobre el rol de la ingeniería civil en remediación ambiental y cierre sostenible de pozos exploratorios. Técnicas de sellado, protección de acuíferos, monitoreo y metodologías ágiles. Lugar: Auditorio Ollantaytambo. Organiza: Escuela Profesional de Ingeniería Civil.",
-      imageUrl: "/CONFERENCIA2MARTESS.jpg"
-    },
+      title: "2:00 PM - Etapa clasificatoria 2. Campeonato futsal Relámpago",
+      description: "La etapa clasificatoria 2 del Campeonato de Futsal Relámpago continuó con los encuentros deportivos entre los equipos participantes, promoviendo la competencia y confraternidad universitaria. Lugar: Losa deportiva de la Facultad de Ciencias Biológicas. Organiza: Comité de Deportes de la Facultad de Ingeniería.",
+      imageUrl: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop",
+      carouselImages: ["/FUTSAL.jpg"]
+    }
+  ],
+  'Sabado 14': [
     {
       id: 11,
-      title: "5:00 PM - Fenómeno de la Corrosión en Estructuras de Concreto Armado",
-      description: "Ing. William Baca Escobar abordó la corrosión del acero en concreto armado. Mecanismos de corrosión, factores ambientales, técnicas de prevención, protección catódica y métodos de reparación estructural. Estrategias para estructuras durables. Lugar: Auditorio Ollantaytambo. Organiza: Escuela Profesional de Ingeniería Civil.",
-      imageUrl: "/INGBACA.jpg"
+      title: "2:00 PM - Etapa Final. Campeonato futsal Relámpago",
+      description: "La etapa final del Campeonato de Futsal Relámpago y el Campeonato de Futsal de Docentes reunieron a los equipos participantes en una jornada de competencia deportiva y confraternidad universitaria. Lugar: Losa deportiva de la Facultad de Ciencias Biológicas. Organiza: Comité de Deportes de la Facultad de Ingeniería.",
+      imageUrl: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop",
+      carouselImages: ["/FUTSAL.jpg"]
     },
     {
       id: 12,
-      title: "6:00 PM - Diseños Sostenibles de Mezclas Asfálticas",
-      description: "Ing. Fabián Cely presentó tendencias en mezclas asfálticas sostenibles: materiales reciclados, aditivos modificadores y asfaltos templados. Criterios de desempeño, durabilidad y economía circular en pavimentos modernos. Lugar: Auditorio Ollantaytambo. Organiza: Escuela Profesional de Ingeniería Civil.",
-      imageUrl: "/CONFERENCIA4MATES.jpg"
-    },
+      title: "2:00 PM -  Finales y premiación de competencias deportivas",
+      description: "La jornada culminó con las finales y la premiación de las competencias deportivas, reconociendo el esfuerzo y desempeño de los equipos participantes. Lugar: Losa deportiva de la Facultad de Ciencias Biológicas. Organiza: Comité de Deportes de la Facultad de Ingeniería.",
+      imageUrl: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop",
+      carouselImages: ["/FUTSAL.jpg"]
+    }
+    ],
+
+
+
+    'Martes 17': [
     {
       id: 13,
-      title: "7:00 PM - Tratamientos Superficiales en Pavimentos",
-      description: "Ing. Reison Huari expuso sobre tratamientos superficiales en pavimentos: sellos asfálticos, micropavimentos y lechadas. Criterios de selección según tipo de vía, tráfico y clima. Beneficios económicos de tratamientos preventivos. Lugar: Auditorio Ollantaytambo. Organiza: Escuela Profesional de Ingeniería Civil.",
-      imageUrl: "/CONFERENCIA5MARETSS.jpg"
-    }
-  ],
-  'Miércoles 12': [
+      title: "11:00 AM - III Feria ConstruCivil 2026 ",
+      description: "La III Feria ConstruCivil 2026 reunió a estudiantes, docentes y profesionales del sector construcción en un espacio dedicado a la exposición de proyectos, innovaciones y soluciones relacionadas con la Ingeniería Civil. Lugar: Auditorio Ollantaytambo. Organiza: Escuela Profesional de Ingeniería Civil.",
+      imageUrl: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop",
+      carouselImages: ["/FERIACIVIL1.jpg", "/FERIACIVIL2.jpg", "/FERIACIVIL3.jpg"]
+    },
     {
       id: 14,
-      title: "Inauguración del Ciclo de Conferencias Internacionales Tecnológicas",
-      description: "Dra. Alicia Chiok Guerra, Jefa de la Biblioteca Virtual de Ingeniería, inauguró el Ciclo de Conferencias Internacionales Tecnológicas, evento organizado por la BVI.",
-      imageUrl: "/innauguracion.jpg"
+      title: "2:00 PM - Etapa clasificatoria 1. Campeonato futsal Relámpago",
+      description: "La etapa clasificatoria 1 del Campeonato de Futsal Relámpago reunió a los equipos participantes en una jornada de competencia deportiva y confraternidad. Lugar: Losa deportiva de la Facultad de Ciencias Biológicas. Organiza: Comité de Deportes de la Facultad de Ingeniería.",
+      imageUrl: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop",
+      carouselImages: ["/FUTSAL.jpg"]
     },
     {
       id: 15,
-      title: "10:00 AM - El Algoritmo Verde y la IA en Infraestructura Sostenible",
-      description: "Dr. Carlos Chavarry Vallejos expuso sobre IA aplicada en infraestructura sostenible. El 'Algoritmo Verde' combina análisis predictivo, optimización de recursos y reducción de impacto ambiental. Casos de éxito y posibilidades en Perú. Lugar: Vía Zoom. Organiza: Biblioteca Virtual de Ingeniería.",
-      imageUrl: "/1raconferencia_miercoles.jpg"
+      title: "3:00 PM - Estación de caligrafía china ",
+      description: "La estación de caligrafía china ofreció a los participantes una experiencia cultural y artística, permitiéndoles conocer y practicar técnicas tradicionales de escritura china, así como acercarse a sus expresiones y simbolismos. Lugar: Auditorio Ollantaytambo. Organiza: Escuela Profesional de Ingeniería Civil.",
+      imageUrl: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop",
+      carouselImages: ["/ESTACIONCHINA.jpg"]
     },
     {
       id: 16,
-      title: "11:00 AM - Ian, el Asistente Académico con IA en la Biblioteca Ebook 7/24",
-      description: "Mg. Ángel Revolledo Morán presentó a Ian, asistente académico con IA disponible 24/7. Ayuda a encontrar recursos, generar referencias y resumir artículos instantáneamente. Acelera investigación y mejora productividad académica. Lugar: Vía Zoom. Organiza: Biblioteca Virtual de Ingeniería.",
-      imageUrl: "/cambiaesto.jpg"
-    },
+      title: "3:30 PM - Ceremonia Central Ingeniería Civil.",
+      description: "La Ceremonia Central de Ingeniería Civil incluyó la conferencia “El Qhapaq Ñan: Concepción, estudio y registro a través del tiempo”, a cargo del Lic. Alfredo Bar Esquivel, quien abordó la importancia histórica y cultural de esta red vial andina, así como su evolución y documentación a lo largo del tiempo. Lugar: Auditorio Ollantaytambo. Organiza: Escuela Profesional de Ingeniería Civil.",
+      imageUrl: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop",
+      carouselImages: ["/CEREMONIACIVIL.jpg"]
+    }
+  ],
+
+
+    'Miercoles 18': [
     {
       id: 17,
-      title: "11:30 AM - Futsal Masculino – Etapa Final y Premiación",
-      description: "Final del torneo de Futsal Masculino con partidos emocionantes. Los equipos demostraron técnica, estrategia y espíritu deportivo. Premiación a campeones, subcampeones y jugadores destacados. Lugar: Campo deportivo de la Facultad de Biología. Organiza: Unidad de Extensión Cultural y Proyección Social.",
-      imageUrl: "/FUTSAL.jpg"
+      title: "10:00 AM - Sistema de Gestión de Calidad en Ingeniería",
+      description: "El Mg. Ing. Raúl Hinojosa expuso sobre la importancia de los sistemas de gestión de calidad en ingeniería y su aplicación para mejorar los procesos y resultados. Lugar: Auditorio Ollantaytambo. Organiza: Escuela Profesional de Ingeniería Mecatrónica.",
+      imageUrl: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop",
+      carouselImages: ["/CONFEMIERCOLES.jpg"]
     },
     {
       id: 18,
-      title: "12:00 PM - Estrategias de Aprendizaje en la Era Digital con McGraw Hill",
-      description: "Mg. Gustavo Orozco Aragón compartió estrategias de aprendizaje con McGraw Hill: recursos interactivos, evaluación adaptativa y seguimiento académico. Técnicas de estudio basadas en evidencia para mejorar comprensión y retención. Lugar: Vía Zoom. Organiza: Biblioteca Virtual de Ingeniería.",
-      imageUrl: "/editado8.png"
+      title: "6:00 PM - El Futuro de la Mecatrónica y la IA",
+      description: "El Dr. Ing. Freedy Sotelo Valer expuso sobre las tendencias y perspectivas de la Mecatrónica y la Inteligencia Artificial, destacando su impacto en el desarrollo tecnológico. Lugar: Auditorio Ollantaytambo. Organiza: Escuela Profesional de Ingeniería Mecatrónica.",
+      imageUrl: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop",
+      carouselImages: ["/CONFEMIERCOLES.jpg"]
+    }
+    ],
+
+
+    'Jueves 19': [
+    {
+      id: 19,
+      title: "11:00 AM - La Industria Pisquera: Retos y desafíos ",
+      description: "El Lic. Fernando Barruetto Andrade expuso sobre los principales retos y desafíos de la industria pisquera, abordando su desarrollo y las oportunidades del sector. Lugar: Auditorio Ollantaytambo. Organiza: Escuela Profesional de Ingeniería Industrial.",
+      imageUrl: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop",
+      carouselImages: ["/CONFEPESQUE.jpg"]
     },
     {
       id: 20,
-      title: "4:00 PM - IA y Educación Superior: Oportunidades y Desafíos",
-      description: "Mg. Luis Piedra Rubio expuso sobre IA en educación superior. Oportunidades para personalizar aprendizaje, automatizar evaluaciones y mejorar experiencia estudiantil. Desafíos éticos, técnicos y pedagógicos: privacidad, equidad y formación docente. Lugar: Vía Zoom. Organiza: Biblioteca Virtual de Ingeniería.",
-      imageUrl: "/ingpiedra.png"
+      title: "3:00 PM - El ingeniero que toma decisiones estratégicas: cómo transformar tu carrera, impulsar tus proyectos y construir tu patrimonio ",
+      description: "El Mg. Henry Borda Huamán compartió estrategias para fortalecer el desarrollo profesional del ingeniero, impulsar proyectos y tomar decisiones orientadas al crecimiento y la construcción de patrimonio. Lugar: Auditorio Ollantaytambo. Organiza: Escuela Profesional de Ingeniería Industrial.",
+      imageUrl: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop",
+      carouselImages: ["/CONFEHENRY.jpg"]
     },
     {
       id: 21,
-      title: "5:00 PM - Diseñando Estrategias para Pruebas de Sistemas con IA",
-      description: "Mg. Karen Zully Aylas Torres presentó metodologías para pruebas de software con IA. Testing automatizado, generación de casos de prueba, detección de bugs con machine learning y optimización de QA. Lugar: Vía Zoom. Organiza: Biblioteca Virtual de Ingeniería.",
-      imageUrl: "/CONFERENCIA6MIERCOLSA.jpg"
+      title: "5:00 PM - Galvanizado por Inmersión en Caliente: Del diseño a la durabilidad",
+      description: "El Ing. Herminio Zamora Chávez expuso sobre el proceso de galvanizado por inmersión en caliente, destacando su aplicación en el diseño y la protección de estructuras metálicas contra la corrosión. Lugar: Auditorio Ollantaytambo. Organiza: Escuela Profesional de Ingeniería Industrial.",
+      imageUrl: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop",
+      carouselImages: ["/CONFEHERM.jpg"]
     },
     {
       id: 22,
-      title: "6:00 PM - Infraestructura de Alto Rendimiento y Aceleradores en la Era de la IA",
-      description: "Dr. Emilio Bustamante Avanzini expuso sobre infraestructura de hardware para IA a gran escala. Arquitecturas de GPUs, TPUs, sistemas distribuidos y aceleradores. Requerimientos para deep learning y consideraciones de costo-beneficio. Lugar: Vía Zoom. Organiza: Biblioteca Virtual de Ingeniería.",
-      imageUrl: "/CONFERENCIA7MIERCOLEAS.jpg"
-    },
-    {
-      id: 24,
-      title: "8:00 PM - Arquitectura de los Vehículos Híbridos y Eléctricos",
-      description: "Ing. Gonzalo Sáenz García expuso sobre arquitectura de vehículos híbridos y eléctricos. Sistemas de propulsión, baterías, motores y regeneración de energía. Tendencias en movilidad sostenible y oportunidades en el sector automotriz. Lugar: Auditorio Ollantaytambo. Organiza: Escuela Profesional de Ingeniería Mecatrónica.",
-      imageUrl: "/CONFERNCIA9MIERCOLES.jpg"
+      title: "7:00 PM - Importancia del Zinc en la Industria del Galvanizado en el Perú ",
+      description: "La Ing. Mary Susan Monteza Grandez abordó la importancia del zinc en la industria del galvanizado en el Perú y su contribución a la protección y durabilidad de los materiales metálicos. Lugar: Auditorio Ollantaytambo. Organiza: Escuela Profesional de Ingeniería Industrial.",
+      imageUrl: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop",
+      carouselImages: ["/CONFEMARY.jpg"]
     }
-  ],
-  'Jueves 13': [
-    {
-      id: 26,
-      title: "11:00 AM - Conferencia 'Becas de Postgrado en Indonesia' + Baile tradicional y Muestra de Cultura y Arte",
-      description: "El Decano de Ingeniería, Dr. Ing. Santiago Fidel Rojas Tuya, presenta a Handayani Lintang Purwaning Ayu, Jefa de la Sección Cultural, Social y de Información de la Embajada de Indonesia, quien expuso sobre becas de postgrado para estudiantes peruanos. El evento incluyó baile tradicional indonesio y muestra de cultura y arte, promoviendo el intercambio académico Perú-Indonesia. Lugar: Auditorio Ollantaytambo.",
-      imageUrl: "https://images.unsplash.com/photo-1528127269322-539801943592?w=800&h=600&fit=crop",
-      carouselImages: ["/cambio2.jpg", "/cambio1.jpg", "/cambio3.jpg", "/cambio4.jpg", "/BAILE1.jpg"],
-      videoLink: "https://www.facebook.com/share/v/14KGPERGB6a/"
-    },
-    {
-      id: 27,
-      title: "3:00 PM - La importancia de la preservación de los recursos hídricos para la ciudad de Lima y Callao",
-      description: "SEDAPAL presentó la gestión y preservación de recursos hídricos en Lima y Callao. Escasez hídrica, fuentes de agua (Rímac, Chillón, Lurín), proyectos de infraestructura, tratamiento de aguas y participación ciudadana. Rol de la ingeniería en soluciones sostenibles. Lugar: Auditorio Ollantaytambo. Organiza: Escuela Profesional de Ingeniería Industrial y Unidad de Extensión Cultural y Proyección Social.",
-      imageUrl: "/CONFERENCIA2.jpg"
-    }
-  ],
-  'Viernes 14': [
-    {
-      id: 28,
-      title: "7:30 PM - Gran Cena de Confraternidad - Semana de la Facultad de Ingeniería",
-      description: "La comunidad de Ingeniería se reunió en la Gran Cena de Confraternidad, una noche especial de celebración y camaradería. El evento contó con un buffet internacional, orquesta en vivo y show artístico. Los docentes, estudiantes y autoridades compartieron en el restaurante Mandarin (Av. Javier Prado Este 1860), cerrando con broche de oro la Semana de la Facultad de Ingeniería 2025.",
-      imageUrl: "/viernes14.jpg"
-    }
-  ],
-  'Viernes 21': [
-    {
-      id: 32,
-      title: "8:30 AM - 2:00 PM - Gymkhana",
-      description: "Jornada deportiva y recreativa con pruebas físicas, juegos de habilidad y desafíos mentales por equipos. Los participantes acumularon puntos en diferentes estaciones. Promoción de camaradería, espíritu deportivo e integración estudiantil. Lugar: Campo deportivo de la Facultad de Biología. Organiza: Unidad de Extensión Cultural y Proyección Social.",
-      imageUrl: "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=800&h=600&fit=crop",
-      carouselImages: ["/GYNKANAVIERNES.jpg", "/GYNKANAVIERNES2.jpg", "/GYNKANAVIERNES3.jpg", "/GYNKANAVIERNES4.jpg"]
-    },
-    {
-      id: 34,
-      title: "5:30 PM - 6:00 PM - Ceremonia de Clausura de la Semana de la Facultad de Ingeniería",
-      description: "Cierre oficial de la Semana de Ingeniería. Palabras de bienvenida de la Dra. Ing. Esther Joni Vargas Chang y clausura del Decano de Ingeniería Dr. Ing. Santiago Fidel Rojas Tuya. Reconocimiento a docentes con 25 y 50 años de servicio. Premiación del IV Concurso de Fotografía URP. Mensaje inspirador sobre el futuro de la ingeniería peruana y compromiso con la excelencia académica. La ceremonia cerró con un brindis de honor.",
-      imageUrl: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=800&h=600&fit=crop",
-      carouselImages: ["/CLAUSURA.jpg", "/CLAUSURA2.jpg", "/CLAUSURA3.jpg", "/CLAUSURA4.jpg"],
-      videoLink: "https://www.facebook.com/share/v/17GhxMY7CH/",
-      youtubeLink: "https://www.youtube.com/watch?v=Le78gbI1qsU"
-    }
-  ]
+    ]
 };
 
 const LandingPage = () => {
@@ -316,9 +327,9 @@ const LandingPage = () => {
             <img src="/logo_urp.png" alt="URP Logo" className="h-20 w-auto object-contain flex-shrink-0" />
             <div className="text-center flex-1">
               <h1 className="text-2xl font-bold leading-tight">
-                Semana de Ingeniería 2025
+                Semana de Ingeniería 2026
               </h1>
-              <p className="text-sm mt-1 font-semibold">Del 10 al 14 de noviembre</p>
+              <p className="text-sm mt-1 font-semibold">Del 09 al 13 de noviembre</p>
             </div>
             <img src="/logo-bvi-blanco.png" alt="BVI Logo" className="h-20 w-auto object-contain flex-shrink-0" />
           </div>
@@ -328,9 +339,9 @@ const LandingPage = () => {
             <img src="/logo_urp.png" alt="URP Logo" className="h-32 w-auto object-contain flex-shrink-0" />
             <div className="text-center flex-1">
               <h1 className="text-6xl font-bold">
-                Semana de Ingeniería 2025
+                Semana de Ingeniería 2026
               </h1>
-              <p className="text-2xl mt-2 font-semibold">Del 10 al 14 de noviembre</p>
+              <p className="text-2xl mt-2 font-semibold">Del 09 al 13 de noviembre</p>
             </div>
             <img src="/logo-bvi-blanco.png" alt="BVI Logo" className="h-32 w-auto object-contain flex-shrink-0" />
           </div>
@@ -432,65 +443,7 @@ const LandingPage = () => {
               </div>
             </div>
 
-            {/* Jefa de Biblioteca Virtual */}
-            {/* <div className="bg-white py-8 md:py-16 relative overflow-hidden">
-              <div className="absolute inset-0 opacity-5">
-                <div className="absolute top-0 right-0 w-72 h-72 bg-green-200 rounded-full blur-3xl animate-pulse"></div>
-                <div className="absolute bottom-0 left-0 w-96 h-96 bg-green-200 rounded-full blur-3xl animate-pulse delay-1000"></div>
-              </div>
-              
-              <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
-                <motion.h2 
-                  initial={{ opacity: 0, y: -30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: false }}
-                  className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 md:mb-12 pb-3 md:pb-4 border-b-4 border-green-500 inline-block text-green-800"
-                >
-                  BIBLIOTECA VIRTUAL DE INGENIERÍA
-                </motion.h2>
-                <div className="flex flex-col md:flex-row gap-6 md:gap-12 items-start mt-6 md:mt-8">
-                  <motion.div 
-                    data-aos="fade-right"
-                    className="flex-shrink-0 w-full md:w-auto"
-                  >
-                    <div className="relative">
-                      <div className="w-full max-w-sm mx-auto md:max-w-none md:w-96 md:h-96 lg:w-[450px] lg:h-[450px] aspect-square rounded-2xl overflow-hidden shadow-xl">
-                        <img 
-                          src="/CHIOK.jpg" 
-                          alt="Jefa de Biblioteca Virtual"
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
-                    </div>
-                  </motion.div>
-                  
-                  <motion.div 
-                    data-aos="fade-left"
-                    className="flex-1 w-full"
-                  >
-                    <div className="bg-white rounded-xl md:rounded-2xl p-4 sm:p-6 md:p-8 border-2 border-green-200 shadow-xl">
-                      <p className="text-base sm:text-lg md:text-xl leading-relaxed mb-4 md:mb-6 text-gray-700">
-                        La Biblioteca Virtual de Ingeniería se enorgullece en ser parte fundamental del desarrollo 
-                        académico y de investigación de nuestra comunidad universitaria. A través de nuestras 
-                        plataformas digitales, brindamos acceso a recursos bibliográficos de última generación, 
-                        bases de datos especializadas y herramientas tecnológicas que impulsan la excelencia 
-                        académica de nuestros estudiantes y docentes.
-                      </p>
-                      <p className="text-base sm:text-lg md:text-xl leading-relaxed mb-6 md:mb-8 text-gray-700">
-                        Durante la Semana de Ingeniería 2025, presentamos conferencias innovadoras sobre 
-                        inteligencia artificial, recursos digitales y nuevas tecnologías aplicadas a la educación 
-                        superior, reafirmando nuestro compromiso con la vanguardia educativa y el apoyo constante 
-                        a la investigación científica.
-                      </p>
-                      <div className="border-t-2 border-green-500 pt-4 md:pt-6 mt-4 md:mt-6">
-                        <p className="text-lg sm:text-xl md:text-2xl font-bold text-green-700 mb-1 md:mb-2">DRA. ALICIA CHIOK GUERRA DE TAIPE</p>
-                        <p className="text-base sm:text-lg md:text-xl font-semibold text-green-600">JEFA DE BIBLIOTECA VIRTUAL DE INGENIERÍA</p>
-                      </div>
-                    </div>
-                  </motion.div>
-                </div>
-              </div>
-            </div> */}
+            
 
             {/* Descripción de la Semana de Ingeniería */}
             <div className="bg-white py-8 md:py-16">
@@ -526,17 +479,19 @@ const LandingPage = () => {
                           viewport={{ once: false }}
                           className="text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-r from-green-600 via-emerald-600 to-teal-600 bg-clip-text text-transparent mb-4 md:mb-6"
                         >
-                          Semana de Ingeniería 2025
+                          Semana de Ingeniería 2026
                         </motion.h2>
                         <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed">
-                        La Semana de la Facultad de Ingeniería de la Universidad Ricardo Palma es el evento académico 
-                        y cultural más importante del año, donde convergen estudiantes, docentes, profesionales y empresas 
-                        del sector tecnológico e industrial. Durante cinco días completos, nuestra comunidad universitaria 
-                        participa en conferencias magistrales, talleres especializados, competencias técnicas, ferias de 
-                        proyectos y actividades de networking que fortalecen la formación integral de nuestros futuros 
-                        ingenieros. Este espacio permite el intercambio de conocimientos, la exposición de investigaciones 
-                        innovadoras y la creación de vínculos entre el mundo académico y el sector empresarial, consolidando 
-                        el compromiso de la URP con la excelencia educativa y el desarrollo tecnológico del país.
+                        La Semana de la Facultad de Ingeniería de la Universidad Ricardo Palma constituye uno 
+                        de los acontecimientos académicos y culturales más destacados del año, reuniendo a 
+                        estudiantes, docentes, especialistas y representantes de empresas vinculadas al ámbito 
+                        tecnológico e industrial. A lo largo de cinco jornadas, se desarrollan conferencias, 
+                        talleres especializados, desafíos técnicos, exposiciones de proyectos y espacios de 
+                        integración profesional que contribuyen al fortalecimiento de las competencias de los 
+                        futuros ingenieros. Asimismo, este encuentro promueve la difusión de investigaciones, el 
+                        intercambio de experiencias y la generación de alianzas entre la universidad y el sector 
+                        empresarial, reafirmando el compromiso de la URP con la calidad académica, la innovación y 
+                        el progreso tecnológico del país.
                         </p>
                       </div>
                     </div>
