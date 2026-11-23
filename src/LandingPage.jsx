@@ -329,7 +329,7 @@ const LandingPage = () => {
               <h1 className="text-2xl font-bold leading-tight">
                 Semana de Ingeniería 2026
               </h1>
-              <p className="text-sm mt-1 font-semibold">Del 09 al 13 de noviembre</p>
+              <p className="text-sm mt-1 font-semibold">Del 09 al 19 de noviembre</p>
             </div>
             <img src="/logo-bvi-blanco.png" alt="BVI Logo" className="h-20 w-auto object-contain flex-shrink-0" />
           </div>
@@ -341,7 +341,7 @@ const LandingPage = () => {
               <h1 className="text-6xl font-bold">
                 Semana de Ingeniería 2026
               </h1>
-              <p className="text-2xl mt-2 font-semibold">Del 09 al 13 de noviembre</p>
+              <p className="text-2xl mt-2 font-semibold">Del 09 al 19 de noviembre</p>
             </div>
             <img src="/logo-bvi-blanco.png" alt="BVI Logo" className="h-32 w-auto object-contain flex-shrink-0" />
           </div>
