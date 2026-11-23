@@ -348,33 +348,42 @@ const LandingPage = () => {
         </div>
       </motion.header>
 
-      {/* Navigation Menu */}
-      <nav className="sticky top-0 left-0 right-0 bg-white/95 backdrop-blur-md shadow-xl z-50 border-b-2 border-gray-200">
-        <div className="w-full">
-          <div className="flex items-center justify-start md:justify-center py-4 md:py-5 overflow-x-auto px-4 md:px-6">
-            <div className="flex space-x-3 md:space-x-4 min-w-max">
-              {weekDays.map((day, index) => (
-                <motion.button
-                  key={day}
-                  onClick={() => setSelectedDay(day)}
-                  initial={{ opacity: 0, y: -20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.1 }}
-                  whileHover={{ scale: 1.05, y: -2 }}
-                  whileTap={{ scale: 0.95 }}
-                  className={`px-6 py-3 md:px-8 md:py-4 rounded-xl text-sm md:text-lg font-bold transition-all whitespace-nowrap ${
-                    selectedDay === day
-                      ? 'bg-gradient-to-br from-green-600 via-emerald-600 to-teal-600 text-white shadow-lg'
-                      : 'text-gray-700 bg-gray-100 hover:bg-gray-200 hover:shadow-md'
-                  }`}
-                >
-                  {day}
-                </motion.button>
-              ))}
-            </div>
-          </div>
-        </div>
-      </nav>
+    
+      
+{/* Navigation Menu */}
+<nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-xl border-b border-gray-200 shadow-md">
+  <div className="w-full px-4 sm:px-6">
+    <div className="flex items-center justify-center gap-2 md:gap-3 py-3 overflow-x-auto overflow-y-hidden [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">      {weekDays.map((day, index) => (
+        <motion.button
+          key={day}
+          onClick={() => setSelectedDay(day)}
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: index * 0.05 }}
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.96 }}
+          className={`relative flex-shrink-0 px-4 py-2.5 md:px-5 md:py-3 rounded-full text-sm md:text-base font-semibold whitespace-nowrap transition-all duration-300 ${
+            selectedDay === day
+              ? 'bg-green-700 text-white shadow-md shadow-green-700/20'
+              : 'bg-transparent text-gray-600 hover:bg-green-50 hover:text-green-700'
+          }`}
+        >
+          {day}
+
+          {selectedDay === day && (
+            <motion.span
+              layoutId="activeDay"
+              className="absolute inset-0 rounded-full border-2 border-green-700 pointer-events-none"
+              transition={{ type: "spring", stiffness: 350, damping: 30 }}
+            />
+          )}
+        </motion.button>
+      ))}
+
+    </div>
+  </div>
+</nav>
+
 
       {/* Content Area */}
       <main className="min-h-screen">
